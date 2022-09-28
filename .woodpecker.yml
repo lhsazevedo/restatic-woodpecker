@@ -1,0 +1,10 @@
+pipeline:
+  install:
+    image: phpdockerio/php80-cli
+    commands:
+    - composer install
+  
+  test:
+    image: phpdockerio/php80-cli
+    commands:
+    - vendor/bin/phpunit --textdox
