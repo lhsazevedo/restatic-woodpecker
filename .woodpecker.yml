@@ -7,4 +7,4 @@ pipeline:
   test:
     image: phpdockerio/php80-cli
     commands:
-    - vendor/bin/phpunit --textdox
+    - vendor/bin/phpunit --testdox
